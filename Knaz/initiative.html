@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>كناز العطاء الخيرية :: المبادرات</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet"
+          href="libs/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+    <button class="w3-bar-item w3-button
+     w3-hide-large w3-hover-none
+      w3-hover-text-light-grey"
+            onclick="w3_open();">
+        <i class="fa fa-bars"></i>  القائمة</button>
+    <span class="w3-bar-item w3-left">كناز العطاء الخيرية</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-right" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container w3-row">
+        <div class="w3-col s4">
+            <img src="images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+        </div>
+        <div class="w3-col s8 w3-bar">
+            <span>مرحباُ يا, <strong>مدير</strong></span><br>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+        </div>
+    </div>
+    <hr>
+    <div class="w3-container">
+        <h5>أقسام الموقع</h5>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
+           onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  اغلق القائمة</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  نظرة عامة</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-briefcase fa-fw"></i>  الحسابات</a>
+        <a href="initiative.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-lightbulb fa-fw"></i>  المبادرات</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-hands-helping fa-fw"></i>  الاحتياجات</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  المشاركون</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-secret fa-fw"></i>  المستفيدون</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users-cog fa-fw"></i>  المتعاونون</a>
+    </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity"
+     onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-right:300px;margin-top:43px;">
+
+    <!-- Header -->
+    <header class="w3-container w3-padding">
+            <span class="w3-tag w3-large">لوحة التحكم</span>
+            <span class="w3-tag w3-large w3-blue">المبادرات</span>
+    </header>
+
+    <div class="w3-row-padding w3-margin-bottom">
+        <div class="w3-quarter">
+            <div class="w3-container w3-red w3-padding-16">
+                <div class="w3-left"><i class="fas fa-briefcase w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                    <h3>7</h3>
+                </div>
+                <div class="w3-clear"></div>
+                <h4>صناديق</h4>
+            </div>
+        </div>
+        <div class="w3-quarter">
+            <div class="w3-container w3-blue w3-padding-16">
+                <div class="w3-left"><i class="fa fa-lightbulb w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                    <h3>5</h3>
+                </div>
+                <div class="w3-clear"></div>
+                <h4>مبادرات</h4>
+            </div>
+        </div>
+        <div class="w3-quarter">
+            <div class="w3-container w3-teal w3-padding-16">
+                <div class="w3-left"><i class="fa fa-hands-helping w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                    <h3>8</h3>
+                </div>
+                <div class="w3-clear"></div>
+                <h4>احتياجات</h4>
+            </div>
+        </div>
+        <div class="w3-quarter">
+            <div class="w3-container w3-orange w3-text-white w3-padding-16">
+                <div class="w3-left"><i class="fa fa-clipboard-check w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                    <h3>4</h3>
+                </div>
+                <div class="w3-clear"></div>
+                <h4>معتمدة</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-panel w3-row-padding">
+        <div class="w3-third">
+            <h2>المبادرات</h2>
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button tablink w3-blue" onclick="opent(event,'I_New')">جديدة</button>
+                <button class="w3-bar-item w3-button tablink" onclick="opent(event,'I_Accepted')">معتمدة</button>
+                <button class="w3-bar-item w3-button tablink" onclick="opent(event,'I_Done')">منفذة</button>
+                <button class="w3-bar-item w3-button tablink" onclick="opent(event,'I_Undone')">متعثرة</button>
+                <button class="w3-bar-item w3-button tablink" onclick="opent(event,'I_Canceled')">مستبعدة</button>
+            </div>
+
+            <div id="I_New" class="w3-border tab-el">
+                    <ul class="w3-ul w3-hoverable">
+                        <li>
+                            <a href="#" class="">
+                                <h4>افطار الصائم</h4>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا ا</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <h4>تيسير العمرة</h4>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا ا</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <h4>حفر بئر</h4>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا ا</p>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div id="I_Accepted" class="w3-container w3-border tab-el" style="display:none">
+                <ul class="w3-ul w3-hoverable">
+                    <li>
+                        <a href="#" class="">
+                            <h4>افطار الصائم</h4>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا ا</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <h4>تيسير العمرة</h4>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا ا</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <h4>حفر بئر</h4>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا ا</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="I_Done" class="w3-container w3-border tab-el" style="display:none">
+                <h2>خالية</h2>
+
+            </div>
+            <div id="I_Undone" class="w3-container w3-border tab-el" style="display:none">
+                <ul class="w3-ul w3-hoverable">
+                    <li>
+                        <a href="#" class="">
+                            <h4>افطار الصائم</h4>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا ا</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <h4>تيسير العمرة</h4>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا ا</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <h4>حفر بئر</h4>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا ا</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="I_Canceled" class="w3-container w3-border tab-el" style="display:none">
+                <h2>خالية</h2>
+            </div>
+        </div>
+        <div class="w3-twothird">
+            <h2>اضافة مبادرة جديدة</h2>
+            <form action="" method="post" class="w3-padding-large">
+                <div class="w3-margin-bottom">
+                    <label>اسم المبادرة</label>
+                    <input class="w3-input" type="text" placeholder="الاسم" required>
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>التصنيف</label>
+                    <select class="w3-input">
+                        <option selected>اختر التصنيف</option>
+                        <option>رئيسي</option>
+                        <option>فرعي</option>
+                    </select>
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>قكرة المبادرة</label>
+                    <textarea class="w3-input" rows="" placeholder="اكتب ملخص الفكرة" required></textarea>
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>أهداف المبادرة</label>
+                    <textarea class="w3-input" rows="5" placeholder="اكتب أهداف المبادرة" required></textarea>
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>موعد التنفيذ</label>
+                    <input class="w3-input" type="date" required>
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>مكان التنفيذ</label>
+                    <input class="w3-input" type="text" placeholder="اكتب العنوان" required>
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>الفئة المستهدفة</label>
+                    <select class="w3-input">
+                        <option selected>اختر الفئة</option>
+                        <option>الأطفال</option>
+                        <option>العجائز</option>
+                        <option>الأسر</option>
+                    </select>
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>الجهة المنفذة</label>
+                    <select class="w3-input">
+                        <option selected>اختر الجهة</option>
+                        <option>كناز العطاء</option>
+                        <option>كناز الخيرية</option>
+                        <option>اركان الخيرية</option>
+                    </select>
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>عدد المستفيدين</label>
+                    <input class="w3-input" type="number" placeholder="حدد العدد" required>
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>التكلفة الكاملة</label>
+                    <input class="w3-input" type="number" placeholder="حدد التكلفة الكاملة" required>
+                </div>
+                <div class="w3-margin-bottom slidecontainer">
+                    <label>ادارة وتشغيل</label>
+                    <input class="slider" type="range" min="1" max="100" value="50" class="slider" id="myRange" required>
+                    <strong class="w3-large" id="slider-value"></strong>
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>مرفقات</label>
+                    <input class="w3-input" type="file" placeholder="حدد مرفق" >
+                </div>
+                <div class="w3-margin-bottom">
+                    <button class="w3-button w3-section w3-blue w3-ripple"> أحفظ </button></div>
+
+            </form>
+        </div>
+    </div>
+    <hr>
+
+    <br>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-16 w3-light-grey">
+        <h4>كناز العطاء الخيرية</h4>
+        <p>تم التطوير بواسطة <a href="https://www.tasmeemme.com/ahmadtibin131470" target="_blank">أحمد تبن</a></p>
+    </footer>
+
+    <!-- End page content -->
+</div>
+
+<script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+</script>
+<script>
+    function opent(evt, Name) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab-el");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
+        }
+        document.getElementById(Name).style.display = "block";
+        evt.currentTarget.className += " w3-blue";
+    }
+</script>
+<script src="js/app.js"></script>
+</body>
+</html>
